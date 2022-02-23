@@ -17,6 +17,7 @@
 		7AAD337127C5D5F80057DCCE /* CSUF_ParkingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAD337027C5D5F80057DCCE /* CSUF_ParkingUITests.swift */; };
 		7AAD337327C5D5F80057DCCE /* CSUF_ParkingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAD337227C5D5F80057DCCE /* CSUF_ParkingUITestsLaunchTests.swift */; };
 		7AAD338027C5D65D0057DCCE /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 7AAD337F27C5D65D0057DCCE /* .gitignore */; };
+		7AAD338227C5D9D00057DCCE /* alarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAD338127C5D9D00057DCCE /* alarm.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		7AAD337027C5D5F80057DCCE /* CSUF_ParkingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSUF_ParkingUITests.swift; sourceTree = "<group>"; };
 		7AAD337227C5D5F80057DCCE /* CSUF_ParkingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSUF_ParkingUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		7AAD337F27C5D65D0057DCCE /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		7AAD338127C5D9D00057DCCE /* alarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = alarm.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				7AAD335827C5D5F70057DCCE /* Assets.xcassets */,
 				7AAD335A27C5D5F70057DCCE /* LaunchScreen.storyboard */,
 				7AAD335D27C5D5F70057DCCE /* Info.plist */,
+				7AAD338127C5D9D00057DCCE /* alarm.swift */,
 			);
 			path = CSUF_Parking;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 				7AAD335427C5D5F60057DCCE /* ViewController.swift in Sources */,
 				7AAD335027C5D5F60057DCCE /* AppDelegate.swift in Sources */,
 				7AAD335227C5D5F60057DCCE /* SceneDelegate.swift in Sources */,
+				7AAD338227C5D9D00057DCCE /* alarm.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
