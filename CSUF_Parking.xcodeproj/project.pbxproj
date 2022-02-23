@@ -16,6 +16,7 @@
 		7AAD336727C5D5F70057DCCE /* CSUF_ParkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAD336627C5D5F70057DCCE /* CSUF_ParkingTests.swift */; };
 		7AAD337127C5D5F80057DCCE /* CSUF_ParkingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAD337027C5D5F80057DCCE /* CSUF_ParkingUITests.swift */; };
 		7AAD337327C5D5F80057DCCE /* CSUF_ParkingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAD337227C5D5F80057DCCE /* CSUF_ParkingUITestsLaunchTests.swift */; };
+		7AAD338027C5D65D0057DCCE /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 7AAD337F27C5D65D0057DCCE /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		7AAD336C27C5D5F80057DCCE /* CSUF_ParkingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CSUF_ParkingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AAD337027C5D5F80057DCCE /* CSUF_ParkingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSUF_ParkingUITests.swift; sourceTree = "<group>"; };
 		7AAD337227C5D5F80057DCCE /* CSUF_ParkingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSUF_ParkingUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7AAD337F27C5D65D0057DCCE /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		7AAD334327C5D5F60057DCCE = {
 			isa = PBXGroup;
 			children = (
+				7AAD337F27C5D65D0057DCCE /* .gitignore */,
 				7AAD334E27C5D5F60057DCCE /* CSUF_Parking */,
 				7AAD336527C5D5F70057DCCE /* CSUF_ParkingTests */,
 				7AAD336F27C5D5F80057DCCE /* CSUF_ParkingUITests */,
@@ -231,6 +234,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AAD338027C5D65D0057DCCE /* .gitignore in Resources */,
 				7AAD335C27C5D5F70057DCCE /* LaunchScreen.storyboard in Resources */,
 				7AAD335927C5D5F70057DCCE /* Assets.xcassets in Resources */,
 				7AAD335727C5D5F60057DCCE /* Main.storyboard in Resources */,
