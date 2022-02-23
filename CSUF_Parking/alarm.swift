@@ -7,4 +7,6 @@
 
 import Foundation
 
-//test test test
+struct alarm {
+    //add code here
+}
