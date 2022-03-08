@@ -17,6 +17,16 @@ class CSUF_ParkingTests: XCTestCase {
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
+    
+    func testDate() {
+        _ = alarm(1)
+    }
+    
+    func some_date() {
+        let myDateNum = alarm()
+        let december_test = myDateNum.number
+        XCTAssertEqual(december_test, 12)
+    }
 
     func testExample() throws {
         // This is an example of a functional test case.
