@@ -8,5 +8,15 @@
 import Foundation
 
 struct alarm {
-    //add code here
+    var date: Date = Date()
+    var enabled: Bool = false
+    
+    
+    init(Date:Date, enabled:Bool){
+            self.date = Date
+            self.enabled = enabled
+        
+        }
+    
+    
 }
