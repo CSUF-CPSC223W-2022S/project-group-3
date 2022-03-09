@@ -27,7 +27,7 @@ class CSUF_ParkingTests: XCTestCase {
         let december_test = myDateNum.number
         XCTAssertEqual(december_test, 12)
     }
-    //test
+    
 
     func testExample() throws {
         // This is an example of a functional test case.
