@@ -13,7 +13,16 @@ class CSUF_ParkingTests: XCTestCase {
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
-
+    
+    func testWeather() {
+        var test_weather = weather(83.33)
+        
+        
+        XCTAssertEqual(test_weather.temp, 83.33)
+        XCTAssertEqual(test_weather.humidity, 12.33)
+    }
+    
+    
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
