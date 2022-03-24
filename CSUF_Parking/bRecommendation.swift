@@ -19,3 +19,13 @@ class Best{
         print("The most convient parking structure would be:" /name)
     }
 }
+
+struct Questions{
+    
+    func askQ{
+        print("The following questions are asked to gather and analyze your preferences")
+        print("What is your favorite parking structure?")
+        print("Do you wish to prioritize the first floor for parking?")
+        print("Would you prefer to park closest to the parking permit machines?")
+    }
+}
