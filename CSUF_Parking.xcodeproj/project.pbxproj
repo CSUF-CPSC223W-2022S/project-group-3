@@ -7,10 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7A4F517A27D8272100815807 /* TestPage_Weather.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A4F517927D8272100815807 /* TestPage_Weather.storyboard */; };
-		7A4F517C27D828DF00815807 /* TestPage_Alarm.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A4F517B27D828DF00815807 /* TestPage_Alarm.storyboard */; };
-		7A4F517E27D829E900815807 /* TestPage_ClassTime.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A4F517D27D829E900815807 /* TestPage_ClassTime.storyboard */; };
-		7A4F518027D829F800815807 /* TestPage_Building.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A4F517F27D829F800815807 /* TestPage_Building.storyboard */; };
 		7AAD335027C5D5F60057DCCE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAD334F27C5D5F60057DCCE /* AppDelegate.swift */; };
 		7AAD335227C5D5F60057DCCE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAD335127C5D5F60057DCCE /* SceneDelegate.swift */; };
 		7AAD335427C5D5F60057DCCE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAD335327C5D5F60057DCCE /* ViewController.swift */; };
@@ -40,10 +36,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		7A4F517927D8272100815807 /* TestPage_Weather.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TestPage_Weather.storyboard; sourceTree = "<group>"; };
-		7A4F517B27D828DF00815807 /* TestPage_Alarm.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TestPage_Alarm.storyboard; sourceTree = "<group>"; };
-		7A4F517D27D829E900815807 /* TestPage_ClassTime.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TestPage_ClassTime.storyboard; sourceTree = "<group>"; };
-		7A4F517F27D829F800815807 /* TestPage_Building.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TestPage_Building.storyboard; sourceTree = "<group>"; };
 		7AAD334C27C5D5F60057DCCE /* CSUF_Parking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CSUF_Parking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AAD334F27C5D5F60057DCCE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7AAD335127C5D5F60057DCCE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -84,17 +76,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7A4F517827D826C100815807 /* TestPage */ = {
-			isa = PBXGroup;
-			children = (
-				7A4F517927D8272100815807 /* TestPage_Weather.storyboard */,
-				7A4F517B27D828DF00815807 /* TestPage_Alarm.storyboard */,
-				7A4F517D27D829E900815807 /* TestPage_ClassTime.storyboard */,
-				7A4F517F27D829F800815807 /* TestPage_Building.storyboard */,
-			);
-			path = TestPage;
-			sourceTree = "<group>";
-		};
 		7AAD334327C5D5F60057DCCE = {
 			isa = PBXGroup;
 			children = (
@@ -118,7 +99,6 @@
 		7AAD334E27C5D5F60057DCCE /* CSUF_Parking */ = {
 			isa = PBXGroup;
 			children = (
-				7A4F517827D826C100815807 /* TestPage */,
 				7AAD334F27C5D5F60057DCCE /* AppDelegate.swift */,
 				7AAD335127C5D5F60057DCCE /* SceneDelegate.swift */,
 				7AAD335327C5D5F60057DCCE /* ViewController.swift */,
@@ -243,12 +223,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A4F517A27D8272100815807 /* TestPage_Weather.storyboard in Resources */,
 				7AAD338027C5D65D0057DCCE /* .gitignore in Resources */,
 				7AAD335C27C5D5F70057DCCE /* LaunchScreen.storyboard in Resources */,
-				7A4F517E27D829E900815807 /* TestPage_ClassTime.storyboard in Resources */,
-				7A4F517C27D828DF00815807 /* TestPage_Alarm.storyboard in Resources */,
-				7A4F518027D829F800815807 /* TestPage_Building.storyboard in Resources */,
 				7AAD335927C5D5F70057DCCE /* Assets.xcassets in Resources */,
 				7AAD335727C5D5F60057DCCE /* Main.storyboard in Resources */,
 			);
