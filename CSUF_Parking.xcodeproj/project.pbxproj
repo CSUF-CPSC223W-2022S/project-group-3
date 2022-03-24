@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A6A92E327EBC8A7000A0C5D /* weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6A92E227EBC8A7000A0C5D /* weather.swift */; };
 		7A4F517A27D8272100815807 /* TestPage_Weather.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A4F517927D8272100815807 /* TestPage_Weather.storyboard */; };
 		7A4F517C27D828DF00815807 /* TestPage_Alarm.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A4F517B27D828DF00815807 /* TestPage_Alarm.storyboard */; };
 		7A4F517E27D829E900815807 /* TestPage_ClassTime.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A4F517D27D829E900815807 /* TestPage_ClassTime.storyboard */; };
@@ -18,7 +17,6 @@
 		7AAD335727C5D5F60057DCCE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AAD335527C5D5F60057DCCE /* Main.storyboard */; };
 		7AAD335927C5D5F70057DCCE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AAD335827C5D5F70057DCCE /* Assets.xcassets */; };
 		7AAD335C27C5D5F70057DCCE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AAD335A27C5D5F70057DCCE /* LaunchScreen.storyboard */; };
-		7AAD336727C5D5F70057DCCE /* CSUF_ParkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAD336627C5D5F70057DCCE /* CSUF_ParkingTests.swift */; };
 		7AAD337127C5D5F80057DCCE /* CSUF_ParkingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAD337027C5D5F80057DCCE /* CSUF_ParkingUITests.swift */; };
 		7AAD337327C5D5F80057DCCE /* CSUF_ParkingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAD337227C5D5F80057DCCE /* CSUF_ParkingUITestsLaunchTests.swift */; };
 		7AAD338027C5D65D0057DCCE /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 7AAD337F27C5D65D0057DCCE /* .gitignore */; };
@@ -42,7 +40,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0A6A92E227EBC8A7000A0C5D /* weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weather.swift; sourceTree = "<group>"; };
 		7A4F517927D8272100815807 /* TestPage_Weather.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TestPage_Weather.storyboard; sourceTree = "<group>"; };
 		7A4F517B27D828DF00815807 /* TestPage_Alarm.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TestPage_Alarm.storyboard; sourceTree = "<group>"; };
 		7A4F517D27D829E900815807 /* TestPage_ClassTime.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TestPage_ClassTime.storyboard; sourceTree = "<group>"; };
@@ -56,7 +53,6 @@
 		7AAD335B27C5D5F70057DCCE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7AAD335D27C5D5F70057DCCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7AAD336227C5D5F70057DCCE /* CSUF_ParkingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CSUF_ParkingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7AAD336627C5D5F70057DCCE /* CSUF_ParkingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSUF_ParkingTests.swift; sourceTree = "<group>"; };
 		7AAD336C27C5D5F80057DCCE /* CSUF_ParkingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CSUF_ParkingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AAD337027C5D5F80057DCCE /* CSUF_ParkingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSUF_ParkingUITests.swift; sourceTree = "<group>"; };
 		7AAD337227C5D5F80057DCCE /* CSUF_ParkingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSUF_ParkingUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -104,7 +100,6 @@
 			children = (
 				7AAD337F27C5D65D0057DCCE /* .gitignore */,
 				7AAD334E27C5D5F60057DCCE /* CSUF_Parking */,
-				7AAD336527C5D5F70057DCCE /* CSUF_ParkingTests */,
 				7AAD336F27C5D5F80057DCCE /* CSUF_ParkingUITests */,
 				7AAD334D27C5D5F60057DCCE /* Products */,
 			);
@@ -131,17 +126,8 @@
 				7AAD335827C5D5F70057DCCE /* Assets.xcassets */,
 				7AAD335A27C5D5F70057DCCE /* LaunchScreen.storyboard */,
 				7AAD335D27C5D5F70057DCCE /* Info.plist */,
-				0A6A92E227EBC8A7000A0C5D /* weather.swift */,
 			);
 			path = CSUF_Parking;
-			sourceTree = "<group>";
-		};
-		7AAD336527C5D5F70057DCCE /* CSUF_ParkingTests */ = {
-			isa = PBXGroup;
-			children = (
-				7AAD336627C5D5F70057DCCE /* CSUF_ParkingTests.swift */,
-			);
-			path = CSUF_ParkingTests;
 			sourceTree = "<group>";
 		};
 		7AAD336F27C5D5F80057DCCE /* CSUF_ParkingUITests */ = {
@@ -289,7 +275,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A6A92E327EBC8A7000A0C5D /* weather.swift in Sources */,
 				7AAD335427C5D5F60057DCCE /* ViewController.swift in Sources */,
 				7AAD335027C5D5F60057DCCE /* AppDelegate.swift in Sources */,
 				7AAD335227C5D5F60057DCCE /* SceneDelegate.swift in Sources */,
@@ -300,7 +285,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7AAD336727C5D5F70057DCCE /* CSUF_ParkingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
