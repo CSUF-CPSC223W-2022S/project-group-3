@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A04CBDD27ECC86900BBBE23 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A04CBDC27ECC86900BBBE23 /* AddViewController.swift */; };
 		7AAD335027C5D5F60057DCCE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAD334F27C5D5F60057DCCE /* AppDelegate.swift */; };
 		7AAD335227C5D5F60057DCCE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAD335127C5D5F60057DCCE /* SceneDelegate.swift */; };
 		7AAD335427C5D5F60057DCCE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAD335327C5D5F60057DCCE /* ViewController.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7A04CBDC27ECC86900BBBE23 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		7AAD334C27C5D5F60057DCCE /* CSUF_Parking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CSUF_Parking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AAD334F27C5D5F60057DCCE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7AAD335127C5D5F60057DCCE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				7AAD335127C5D5F60057DCCE /* SceneDelegate.swift */,
 				7AAD335327C5D5F60057DCCE /* ViewController.swift */,
 				7AAD335527C5D5F60057DCCE /* Main.storyboard */,
+				7A04CBDC27ECC86900BBBE23 /* AddViewController.swift */,
 				7AAD335827C5D5F70057DCCE /* Assets.xcassets */,
 				7AAD335A27C5D5F70057DCCE /* LaunchScreen.storyboard */,
 				7AAD335D27C5D5F70057DCCE /* Info.plist */,
@@ -253,6 +256,7 @@
 			files = (
 				7AAD335427C5D5F60057DCCE /* ViewController.swift in Sources */,
 				7AAD335027C5D5F60057DCCE /* AppDelegate.swift in Sources */,
+				7A04CBDD27ECC86900BBBE23 /* AddViewController.swift in Sources */,
 				7AAD335227C5D5F60057DCCE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
