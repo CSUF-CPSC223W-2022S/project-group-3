@@ -18,6 +18,7 @@
 		7AAD337327C5D5F80057DCCE /* CSUF_ParkingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAD337227C5D5F80057DCCE /* CSUF_ParkingUITestsLaunchTests.swift */; };
 		7AAD338027C5D65D0057DCCE /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 7AAD337F27C5D65D0057DCCE /* .gitignore */; };
 		8950129E27C73F8F001A9272 /* classTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8950129D27C73F8F001A9272 /* classTime.swift */; };
+		89C0BC1227EBFA6700BEE923 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89C0BC1127EBFA6700BEE923 /* Storyboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		7AAD337227C5D5F80057DCCE /* CSUF_ParkingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSUF_ParkingUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		7AAD337F27C5D65D0057DCCE /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		8950129D27C73F8F001A9272 /* classTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = classTime.swift; sourceTree = "<group>"; };
+		89C0BC1127EBFA6700BEE923 /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 		7AAD334327C5D5F60057DCCE = {
 			isa = PBXGroup;
 			children = (
+				89C0BC1127EBFA6700BEE923 /* Storyboard.storyboard */,
 				7AAD337F27C5D65D0057DCCE /* .gitignore */,
 				7AAD334E27C5D5F60057DCCE /* CSUF_Parking */,
 				7AAD336527C5D5F70057DCCE /* CSUF_ParkingTests */,
@@ -241,6 +244,7 @@
 				7AAD335C27C5D5F70057DCCE /* LaunchScreen.storyboard in Resources */,
 				7AAD335927C5D5F70057DCCE /* Assets.xcassets in Resources */,
 				7AAD335727C5D5F60057DCCE /* Main.storyboard in Resources */,
+				89C0BC1227EBFA6700BEE923 /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
