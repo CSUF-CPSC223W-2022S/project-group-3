@@ -36,17 +36,6 @@ class ViewController: UIViewController {
             }
         })
         }
-       /*
-    //@IBAction func didTapTest(_ sender: UIBarButtonItem) {
-        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound], completionHandler: {success, error in
-            if success {
-                self.scheduleTest()
-            }
-            else if let error = error {
-                print("error occured maybe")
-            }
-        })
-   // }*/
     
     func scheduleTest() {
         let content = UNMutableNotificationContent()
