@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Reminderss-->
+        <!--Reminders-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CSUF_Parking" customModuleProvider="target" sceneMemberID="viewController">
@@ -25,7 +25,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Reminderss" id="0Vu-6z-uyi">
+                    <navigationItem key="navigationItem" title="Reminders" id="0Vu-6z-uyi">
                         <barButtonItem key="leftBarButtonItem" title="Test" id="ZCW-7q-LuM">
                             <connections>
                                 <action selector="didTapTest" destination="BYZ-38-t0r" id="0yq-a8-EbQ"/>

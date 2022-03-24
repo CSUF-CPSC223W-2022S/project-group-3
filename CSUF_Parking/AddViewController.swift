@@ -28,6 +28,4 @@ class AddViewController: UIViewController {
             let targetDate = datePicker.date
         }
     }
-
 }
-

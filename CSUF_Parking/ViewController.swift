@@ -20,11 +20,12 @@ class ViewController: UIViewController {
     }
     
     @IBAction func didTapAdd() {
+        guard let vc = storyboard?.instantiateViewController(withIdentifier: "add") as? AddViewController else {
+            return
+        }
+        vc.title = "New Reminder"
+        vc.navigationItem.largeTitleDisplayMode = .never
     }
-    
-   // @IBAction func didTapAdd(_ sender: UIBarButtonItem) {
-   // }
-    
     
     @IBAction func didTapTest() {
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound], completionHandler: {success, error in
@@ -53,14 +54,9 @@ class ViewController: UIViewController {
     }
     
     
-    
-    
     }
 
     
-
-
-
 
 extension ViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
