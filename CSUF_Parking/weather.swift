@@ -7,6 +7,9 @@
 ////////////////////////////////////////////////
 /////////////////////////
 ///another test
+///Update to use openweather data for getting weather data instead of manual JSON
+///
+///
 import Foundation
 
 //let JSON: Data?
