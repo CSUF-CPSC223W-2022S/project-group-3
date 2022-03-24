@@ -14,13 +14,25 @@ class CSUF_ParkingTests: XCTestCase {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
     
-    func testWeather() {
-        var test_weather = weather(83.33)
+    func testWeather_WeatherTableCell() {
+        
+        //let table3 = ViewController()
+        //table3.loadViewIfNeeded()
+        
+        //XCTAssertNil(table3.table)
+        
+        //XCTAssertNotNil(ViewController.tableView)
+        //XCTAssertTrue(table3.exists, "Table exists")
         
         
-        XCTAssertEqual(test_weather.temp, 83.33)
-        XCTAssertEqual(test_weather.humidity, 12.33)
+        XCTAssertNotNil(ViewController.init(nibName: "WeatherTableViewCell", bundle: nil))
     }
+    
+    func testWeather_HourlyTableCell() {
+        
+        XCTAssertNotNil(ViewController.init(nibName: "HourlyTableViewCell", bundle: nil))
+    }
+    
     
     
     override func tearDownWithError() throws {
