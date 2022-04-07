@@ -7,7 +7,7 @@
 ////////////////////////////////////////////////
 /////////////////////////
 ///another test
-///Update to use openweather data for getting weather data instead of manual JSON, test comment
+///Update to use openweather data for getting weather data instead of manual JSON, test comment 3
 ///
 ///
 import Foundation
