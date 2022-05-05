@@ -80,7 +80,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Title..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xHU-yP-iFX">
-                                <rect key="frame" x="10" y="54" width="394" height="52"/>
+                                <rect key="frame" x="10" y="54" width="394" height="146"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="52" id="c7d-o1-ByZ"/>
                                 </constraints>
@@ -88,7 +88,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter body...." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ECn-AK-pbT">
-                                <rect key="frame" x="10" y="126" width="394" height="34"/>
+                                <rect key="frame" x="10" y="220" width="394" height="52"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="52" id="9SR-bc-KIN"/>
                                 </constraints>
@@ -96,7 +96,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="m5L-np-yHO">
-                                <rect key="frame" x="10" y="170" width="414" height="570"/>
+                                <rect key="frame" x="10" y="282" width="414" height="570"/>
                             </datePicker>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ck5-yL-dJT"/>
