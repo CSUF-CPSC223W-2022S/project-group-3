@@ -50,14 +50,25 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let latitude = coordinates.coordinate.latitude
         
         
-        print("\(longitude) | \(latitude)")
+        //Insert API data here
+        let url = "https://api.openweathermap.org/data/2.5/onecall?lat=\(latitude)&lon=\(longitude)&exclude=minutely&appid=a2c8d758983ee557c647b6c229469a00"
+        
+        
+        URLSession.shared.dataTask(with: URL(string: url)!, completionHandler: {data, response, error in
+            guard let data = data, error == nil else {
+                print("Error here")
+                return
+            }
+            
+        })
+        //print("\(longitude) | \(latitude)")
     }
    
     //something
     
     @IBOutlet var table: UITableView!
     
-    var models = [Weather]()
+    var models = [DailyWeatherEntry]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -69,16 +80,110 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         table.delegate = self
         table.dataSource = self
         
+        //setupLocation()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         setupLocation()
     }
     
 
-    
-    
+}
 
+
+struct WeatherResponse: Codable {
+    let lon: Float
+    let lat: Float
+    let timezone: String
+    let current: CurrentWeather
+    let hourly: HourlyWeather
+    let daily: DailyWeather
+    let timezone_offset: Float
 
 }
 
-struct Weather {
+struct CurrentWeather: Codable {
+    let time: Int
+    let summary: String
+    let icon: String
+    let nearestStormDistance: Int
+    let nearestStormBearing: Int
+    let precipIntensity: Int
+    let precipProbability: Int
+    let temperature: Double
+    let apparentTemperature: Double
+    let dewPoint: Double
+    let humidity: Double
+    let pressure: Double
+    let windSpeed: Double
+    let windGust: Double
+    let windBearing: Int
+    let cloudCover: Double
+    let uvIndex: Int
+    let visibility: Double
+    let ozone: Double
     
 }
+
+struct DailyWeather: Codable {
+    let summary: String
+    let icon: String
+    let data: [DailyWeatherEntry]
+    
+}
+
+struct DailyWeatherEntry: Codable {
+    let time: Int
+    let summary: String
+    let icon: String
+    let nearestStormDistance: Int
+    let nearestStormBearing: Int
+    let precipIntensity: Int
+    let precipProbability: Int
+    let temperature: Double
+    let apparentTemperature: Double
+    let dewPoint: Double
+    let humidity: Double
+    let pressure: Double
+    let windSpeed: Double
+    let windGust: Double
+    let windBearing: Int
+    let cloudCover: Double
+    let uvIndex: Int
+    let visibility: Double
+    let ozone: Double
+    
+}
+
+struct HourlyWeather: Codable {
+    let summary: String
+    let icon: String
+    let data: [HourlyWeatherEntry]
+    
+    
+}
+
+struct HourlyWeatherEntry: Codable {
+    let time: Int
+    let summary: String
+    let icon: String
+    let nearestStormDistance: Int
+    let nearestStormBearing: Int
+    let precipIntensity: Int
+    let precipProbability: Int
+    let temperature: Double
+    let apparentTemperature: Double
+    let dewPoint: Double
+    let humidity: Double
+    let pressure: Double
+    let windSpeed: Double
+    let windGust: Double
+    let windBearing: Int
+    let cloudCover: Double
+    let uvIndex: Int
+    let visibility: Double
+    let ozone: Double
+    
+}
+
