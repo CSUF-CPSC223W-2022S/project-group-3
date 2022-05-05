@@ -11,6 +11,16 @@ import Foundation
 class ViewController: UIViewController {
     
     
+    //Weather code added here
+    @IBOutlet var weather_table: UITableView!
+    var weather_models = [Weather]()
+    
+    
+    
+    
+    
+    
+    
 
     @IBOutlet var table: UITableView!
     
@@ -19,7 +29,27 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         table.delegate = self
         table.dataSource = self
+        
+        //Weather Code added here
+        table.register(HourlyTableViewCell.nib(), forCellReuseIdentifier: HourlyTableViewCell.identifier)
+        table.register(WeatherTableViewCell.nib(), forCellReuseIdentifier: WeatherTableViewCell.identifier)        //weather_table.delegate = self
+        //weather_table.dataSource = self
+        
+        
     }
+    
+    
+    //Weather code added here
+    func weather_tableView(_ weather_tableView: UITableView, numberOfRowsInSection weather_section: Int) -> Int {
+        return weather_models.count
+    }
+    
+    func weather_tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        return UITableViewCell()
+    }
+    
+    
+    
     
     @IBAction func didTapAdd() {
         guard let vc = storyboard?.instantiateViewController(withIdentifier: "add") as? AddViewController else {
@@ -107,4 +137,9 @@ struct MyReminder {
     let title: String
     let date: Date
     let identifier: String
+}
+
+//Weather coded added
+struct Weather {
+    
 }
