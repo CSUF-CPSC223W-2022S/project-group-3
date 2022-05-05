@@ -20,6 +20,32 @@
                                 <rect key="frame" x="0.0" y="140" width="414" height="756"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" textLabel="5aO-at-kLi" detailTextLabel="EkI-WH-ony" style="IBUITableViewCellStyleSubtitle" id="DMr-Kq-qtZ">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DMr-Kq-qtZ" id="0ge-X2-nL8">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5aO-at-kLi">
+                                                    <rect key="frame" x="20" y="6" width="25" height="14.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="EkI-WH-ony">
+                                                    <rect key="frame" x="20" y="22.5" width="40.5" height="13.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -45,16 +71,56 @@
             </objects>
             <point key="canvasLocation" x="928.98550724637687" y="81.696428571428569"/>
         </scene>
-        <!--View Controller-->
+        <!--Add View Controller-->
         <scene sceneID="lB2-IW-0SK">
             <objects>
-                <viewController id="3cC-v9-TSA" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="add" id="3cC-v9-TSA" customClass="AddViewController" customModule="CSUF_Parking" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bEu-BF-1cM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Title..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xHU-yP-iFX">
+                                <rect key="frame" x="10" y="54" width="394" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="c7d-o1-ByZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter body...." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ECn-AK-pbT">
+                                <rect key="frame" x="10" y="126" width="394" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="9SR-bc-KIN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="m5L-np-yHO">
+                                <rect key="frame" x="10" y="170" width="414" height="570"/>
+                            </datePicker>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="ck5-yL-dJT"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemGray3Color"/>
+                        <constraints>
+                            <constraint firstItem="m5L-np-yHO" firstAttribute="trailing" secondItem="ck5-yL-dJT" secondAttribute="trailing" constant="10" id="3Yo-Af-pgL"/>
+                            <constraint firstItem="ck5-yL-dJT" firstAttribute="bottom" secondItem="m5L-np-yHO" secondAttribute="bottom" constant="10" id="7ee-iv-u2u"/>
+                            <constraint firstItem="m5L-np-yHO" firstAttribute="top" secondItem="ECn-AK-pbT" secondAttribute="bottom" constant="10" id="7hA-8a-P6Q"/>
+                            <constraint firstItem="ck5-yL-dJT" firstAttribute="trailing" secondItem="xHU-yP-iFX" secondAttribute="trailing" constant="10" id="FXj-E8-aq6"/>
+                            <constraint firstItem="ECn-AK-pbT" firstAttribute="leading" secondItem="ck5-yL-dJT" secondAttribute="leading" constant="10" id="FZS-2d-CB2"/>
+                            <constraint firstItem="xHU-yP-iFX" firstAttribute="leading" secondItem="ck5-yL-dJT" secondAttribute="leading" constant="10" id="Q0J-up-maF"/>
+                            <constraint firstItem="m5L-np-yHO" firstAttribute="leading" secondItem="ck5-yL-dJT" secondAttribute="leading" constant="10" id="V6m-yv-TJX"/>
+                            <constraint firstItem="ck5-yL-dJT" firstAttribute="trailing" secondItem="ECn-AK-pbT" secondAttribute="trailing" constant="10" id="WYl-zg-9KT"/>
+                            <constraint firstItem="ECn-AK-pbT" firstAttribute="top" secondItem="xHU-yP-iFX" secondAttribute="bottom" constant="65" id="YcX-Sr-ruw"/>
+                            <constraint firstItem="xHU-yP-iFX" firstAttribute="top" secondItem="ck5-yL-dJT" secondAttribute="top" constant="10" id="aVu-nq-OhG"/>
+                            <constraint firstItem="ck5-yL-dJT" firstAttribute="bottom" secondItem="ECn-AK-pbT" secondAttribute="bottom" constant="590" id="lZu-Z9-xQ0"/>
+                            <constraint firstItem="ECn-AK-pbT" firstAttribute="top" secondItem="xHU-yP-iFX" secondAttribute="bottom" constant="20" id="p0Y-y4-Mom"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="bodyField" destination="ECn-AK-pbT" id="mlI-Zx-paV"/>
+                        <outlet property="datePicker" destination="m5L-np-yHO" id="0V4-XH-mbY"/>
+                        <outlet property="titleField" destination="xHU-yP-iFX" id="f0k-Pk-nNc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rnc-Kj-zeg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -88,6 +154,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
