@@ -29,6 +29,8 @@ class ViewController: UIViewController {
         datePicker.addTarget(self, action: #selector(dateSelected), for: .valueChanged)
 
     }
+    
+    
     @IBAction func btnSegTapped(_ sender: UISegmentedControl) {
         switch sender.selectedSegmentIndex {
         case 0: datePicker.preferredDatePickerStyle = .compact
