@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -12,66 +12,23 @@
         <scene sceneID="s0d-6b-0kx">
             <objects>
                 <viewController id="Y6W-OH-hqX" customClass="ViewController_classTime" customModule="CSUF_Parking" customModuleProvider="target" sceneMemberID="viewController">
-
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Class Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UXb-jy-PnV">
-                                <rect key="frame" x="106" y="363" width="202" height="52"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Class Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UXb-jy-PnV">
+                                <rect key="frame" x="106" y="114" width="202" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="43"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="dRy-DO-lJ5">
-                                <rect key="frame" x="41.5" y="475" width="331" height="32"/>
-                                <segments>
-                                    <segment title="Compact"/>
-                                    <segment title="Inline"/>
-                                    <segment title="Wheels"/>
-                                </segments>
-                                <connections>
-                                    <action selector="btnSegTapped:" destination="zQB-EQ-iza" eventType="valueChanged" id="RfZ-iR-gri"/>
-                                </connections>
-                            </segmentedControl>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x2X-q0-YBU">
-                                <rect key="frame" x="186" y="761" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <datePicker contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="jKc-sb-tMG">
-                                <rect key="frame" x="-20" y="557" width="414" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="LoB-Ns-ulo"/>
-                                </constraints>
-                            </datePicker>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="x2X-q0-YBU" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="7fR-4s-25s"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="x2X-q0-YBU" secondAttribute="bottom" constant="80" id="AE1-QJ-sCY"/>
-                            <constraint firstItem="jKc-sb-tMG" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="EEi-Bd-K7f"/>
-                            <constraint firstItem="jKc-sb-tMG" firstAttribute="top" secondItem="dRy-DO-lJ5" secondAttribute="bottom" constant="50" id="Owh-Jw-KWa"/>
-                            <constraint firstItem="jKc-sb-tMG" firstAttribute="top" secondItem="dRy-DO-lJ5" secondAttribute="bottom" constant="50" id="S2Z-Gr-0wY"/>
-                            <constraint firstItem="dRy-DO-lJ5" firstAttribute="top" secondItem="UXb-jy-PnV" secondAttribute="bottom" constant="60" id="iye-5t-yYZ"/>
-                            <constraint firstItem="jKc-sb-tMG" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="o0D-EC-pcL"/>
-                            <constraint firstItem="jKc-sb-tMG" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" constant="16" id="oKd-Pl-YOq"/>
-                            <constraint firstItem="x2X-q0-YBU" firstAttribute="top" secondItem="jKc-sb-tMG" secondAttribute="bottom" constant="165" id="pbg-RG-qvw"/>
-                            <constraint firstItem="dRy-DO-lJ5" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="qp0-lK-88L"/>
-                            <constraint firstAttribute="trailing" secondItem="jKc-sb-tMG" secondAttribute="trailing" constant="16" id="r2D-J7-Brl"/>
-                            <constraint firstItem="UXb-jy-PnV" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="sZ8-61-utA"/>
-                            <constraint firstItem="dRy-DO-lJ5" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.8" id="t52-6w-Iy8"/>
-                        </constraints>
                     </view>
-                    <connections>
-                        <outlet property="datePicker" destination="jKc-sb-tMG" id="Zhj-SC-awg"/>
-                        <outlet property="lblDate" destination="x2X-q0-YBU" id="fxj-g9-GqQ"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="zQB-EQ-iza" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="35" y="62"/>
         </scene>
