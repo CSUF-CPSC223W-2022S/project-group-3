@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -16,17 +16,54 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Class Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UXb-jy-PnV">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Class Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UXb-jy-PnV">
                                 <rect key="frame" x="106" y="114" width="202" height="52"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="43"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Yjj-fU-iHS">
+                                <rect key="frame" x="41.5" y="237" width="331" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="30P-bI-5Va"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Compact"/>
+                                    <segment title="Inline"/>
+                                    <segment title="Wheels"/>
+                                </segments>
+                                <connections>
+                                    <action selector="btnSegTapped:" destination="Y6W-OH-hqX" eventType="valueChanged" id="a7m-oC-THl"/>
+                                </connections>
+                            </segmentedControl>
+                            <datePicker contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" style="inline" translatesAutoresizingMaskIntoConstraints="NO" id="H6H-PE-kEP">
+                                <rect key="frame" x="16" y="346" width="382" height="342"/>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mSm-DK-9fl">
+                                <rect key="frame" x="186" y="761" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <constraints>
+                            <constraint firstItem="Yjj-fU-iHS" firstAttribute="top" secondItem="UXb-jy-PnV" secondAttribute="bottom" constant="60" id="2cg-6h-aLx"/>
+                            <constraint firstItem="Yjj-fU-iHS" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.8" id="D49-Vh-tay"/>
+                            <constraint firstItem="mSm-DK-9fl" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="Mek-27-HEa"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="mSm-DK-9fl" secondAttribute="bottom" constant="80" id="Nab-8T-DVl"/>
+                            <constraint firstItem="H6H-PE-kEP" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="UEA-On-kal"/>
+                            <constraint firstItem="UXb-jy-PnV" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="fqD-iZ-EgW"/>
+                            <constraint firstAttribute="trailing" secondItem="H6H-PE-kEP" secondAttribute="trailing" constant="16" id="oGl-lP-rmh"/>
+                            <constraint firstItem="H6H-PE-kEP" firstAttribute="top" secondItem="Yjj-fU-iHS" secondAttribute="bottom" constant="50" id="pOc-EY-C0H"/>
+                            <constraint firstItem="Yjj-fU-iHS" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="yVq-e9-xTp"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="datePicker" destination="H6H-PE-kEP" id="mP5-Kj-iNI"/>
+                        <outlet property="lblDate" destination="mSm-DK-9fl" id="uGJ-7M-gxl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -34,8 +71,8 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
